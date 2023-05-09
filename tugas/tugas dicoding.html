@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Information</title>
+    <style>
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        body {
+            display: flex;
+            justify-content: ;
+            align-items: ;
+            height: 100vh;
+            background-image: url("background.jpg");
+            background-size: cover;
+            color: rgb(138, 144, 122);
+        }
+
+.container {
+    text-align: center;
+}
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", showProfile);
+        function showProfile() {
+            var profile = {
+                name: "Muhammad Furqan",
+                description: "A Student wanted becoming Cloud Enginer",
+                knowledge_cutoff: "I was born and raised in a small town. From a young age, I had a passion for storytelling. Whether through writing, drawing, or performing, I found joy in sharing my imagination with others. As I grew older, my love for storytelling led me to explore different creative avenues, including literature, film, and theater. I pursued my studies in English literature and honed my writing skills. Now, I aspire to weave captivating narratives that touch hearts and inspire minds. My story is an ongoing journey of self-discovery and the pursuit of my artistic dreams.",
+                current_date: "2023-05-09",
+                profile_image: "profile.jpg"
+            };
+
+            var profileElement = document.getElementById("profile");
+            profileElement.innerHTML = "<h1>My Personal Information</h1>" +
+                "<img src='" + profile.profile_image + "' class='profile-image'>" +
+                "<p><strong>Nama:</strong> " + profile.name + "</p>" +
+                "<p><strong>Deskripsi:</strong> " + profile.description + "</p>" +
+                "<p><strong>My Story : </strong> " + profile.knowledge_cutoff + "</p>" +
+                "<p><strong>Tanggal Sekarang:</strong> " + profile.current_date + "</p>";
+        }
+    </script>
+</head>
+<body>
+    <div id="profile"></div>
+</body>
+</html>
